@@ -1,13 +1,14 @@
-Quick configuring netbeans to create a hibernate connection with mysql.
-
- 
-# Install following prior to starting 
-1. Maven
-2. MySQL
-3. Netbean
+# Quick configuring netbeans to create a hibernate connection with mysql.
 
 
-Steps 
+
+Install following before starting
+* Maven
+* MySQL
+* Netbean
+
+
+"Steps" 
 
 1. Create new project, and from categories, select MAVEN and under projects click JAVA APPLICATION
 2. Once the project is created, navigate to PROJECT FILES/ double click the POM.XML
