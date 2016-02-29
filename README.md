@@ -8,8 +8,8 @@ Install following before starting
 * Netbean
 
 
-"Steps" 
-
+Steps
+------------------------------------------------
 1. Create new project, and from categories, select MAVEN and under projects click JAVA APPLICATION
 2. Once the project is created, navigate to PROJECT FILES/ double click the POM.XML
 3. Insert the required hibernate dependencies as follow:
