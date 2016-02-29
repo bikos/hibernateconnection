@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 28, 2016 5:43:33 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.hibernatetry.Cds" table="cds" catalog="cdcol" optimistic-lock="version">
+        <id name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="first_name" length="20" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name" length="20" />
+        </property>
+        <property name="phone" type="java.lang.Integer">
+            <column name="phone" />
+        </property>
+    </class>
+</hibernate-mapping>
