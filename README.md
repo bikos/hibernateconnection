@@ -14,19 +14,19 @@ Steps
 2. Once the project is created, navigate to PROJECT FILES/ double click the POM.XML
 3. Insert the required hibernate dependencies as follow:
 
-  <dependencies>
+  
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>4.3.5.Final</version>
         </dependency>
-        
+      
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.6</version>
         </dependency>
-    </dependencies>
+  
   Now maven will import all the required hibernate dependencies for the project. 
   
 4. Now right click on the SOURCE PACKAGE, then NEW and OTHER. Now under CATEGORIES click on HIBERNATE and from FILE TYPE select 
