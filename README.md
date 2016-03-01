@@ -29,7 +29,7 @@ Steps
   
   Now maven will import all the required hibernate dependencies for the project. 
   
-4. Now right click on the SOURCE PACKAGE, then NEW and OTHER. Now under CATEGORIES click on HIBERNATE and from FILE TYPE select 
+4. Now right click on the SOURCE PACKAGE, then click NEW and then click OTHER. Now under CATEGORIES click on HIBERNATE and from FILE TYPE select 
   HIBERNATE CONFIGURATION WIZARD. Click next until you reach Select Data Source. Select the database connection, for MySQL click on
   NEW DATABSE CONNECTION from DATABASE CONNECTION drop down menu. 
   
@@ -42,10 +42,10 @@ Steps
   
   After this is done, we are interested to create the POJOs for the exiting tables from the database. The hard way would be to type
   the whole POJOs for the table, but netbeans can do that for us. But before that, we need to create a reverse-engineered XML which 
-  can be turned into POJO.
+  is used to create POJO classes.
   
 8. Follow the same as in step 4, but instead of choosing, HIBERNATE CONFIGURATION WIZARD, select HIBERNATE REVERSE ENGINEERING WIZARD.
-  Click on next, all the tables from your RDBMS is shown on the left hand side, select all so that they'll move onto the left side, and click finish
+  Click on next, all the tables from your RDBMS is shown on the left hand side, select all so that they'll move onto the right side, and click finish
   This will create another XML file, remeber that this xml should be together with HIBERNATE.CFG that we created. If HIBERNATE.REVERNG is created at 
   some other directoty, cut and paste it to the directory where configuration xml is located. 
   
