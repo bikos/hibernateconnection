@@ -57,6 +57,8 @@ Steps
   The final step is map the class we craeted with the tables on the database:
 11. Follow step 4, but select HIBERNATE MAPPING WIZARD. Click on next, and open browse on CLASS TO MAP. Now type the name of the POJO class created,
   and map with its corresponding table from the drop down menu of DATABASE TABLE. 
+
+12. As a final step, follow step 4, but select HibernateUtil.Java and click next. This will create the java class with the initialization of the hibernate session. 
   
   Once all the tables are mapped, you're good to go. Attached is a simple configuration of the above steps. Once you've set the enviroment you're
   good to work with HIBERNATE and CRITERIA. 
