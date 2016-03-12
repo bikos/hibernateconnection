@@ -4,8 +4,11 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cdcol?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate_tes?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
-    <mapping resource="com/mycompany/hibernatetry/Cds.hbm.xml"/>
+    <mapping resource="com/mycompany/hibernatemultitable/Department.hbm.xml"/>
+    <mapping resource="com/mycompany/hibernatemultitable/Employee.hbm.xml"/>
+    <mapping resource="com/mycompany/hibernatemultitable/City.hbm.xml"/>
+    <mapping resource="com/mycompany/hibernatemultitable/Position.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
