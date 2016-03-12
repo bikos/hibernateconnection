@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 11, 2016 6:28:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.hibernatemultitable.Employee" table="employee" catalog="hibernate_tes" optimistic-lock="version">
+        <id name="empId" type="java.lang.Integer">
+            <column name="emp_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="city" class="com.mycompany.hibernatemultitable.City" fetch="select">
+            <column name="fk_emp_city_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="department" class="com.mycompany.hibernatemultitable.Department" fetch="select">
+            <column name="fk_department_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="position" class="com.mycompany.hibernatemultitable.Position" fetch="select">
+            <column name="fk_position_id" not-null="true" />
+        </many-to-one>
+        <property name="empFname" type="string">
+            <column name="emp_fname" length="20" not-null="true" />
+        </property>
+        <property name="empLastName" type="string">
+            <column name="emp_lastName" length="20" not-null="true" />
+        </property>
+        <property name="empPhone" type="int">
+            <column name="emp_phone" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
